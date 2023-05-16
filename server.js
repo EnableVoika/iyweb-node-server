@@ -193,7 +193,7 @@ app.get("/search/myblog/blogList", function (req, res) {
 });
 
 // 获取个人博客的单个文章详细内容
-app.get("/query/myblog/blogContent", function (req, res) {
+app.get("/query/blog/blogContent", function (req, res) {
   const blogList = [
     {
       id: 1,
