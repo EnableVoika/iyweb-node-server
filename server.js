@@ -84,7 +84,8 @@ let blogList = [
     登录成功后，就是这个样子。`,
     blogType: "计算机",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://p1.itc.cn/images01/20201118/6edae5059a9b423db5c029c61c6dfd0e.jpeg'
+    thumbnailPicUrl:
+      "https://p1.itc.cn/images01/20201118/6edae5059a9b423db5c029c61c6dfd0e.jpeg",
   },
   {
     id: 2,
@@ -167,7 +168,8 @@ let blogList = [
     登录成功后，就是这个样子。`,
     blogType: "计算机",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img2.baidu.com/it/u=2942695078,3216148297&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=319'
+    thumbnailPicUrl:
+      "https://img2.baidu.com/it/u=2942695078,3216148297&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=319",
   },
   {
     id: 3,
@@ -182,7 +184,8 @@ let blogList = [
     主要是进行数据的增、删、改、查。`,
     blogType: "计算机",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img1.baidu.com/it/u=1934157005,275125827&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500'
+    thumbnailPicUrl:
+      "https://img1.baidu.com/it/u=1934157005,275125827&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
   },
   {
     id: 4,
@@ -197,7 +200,8 @@ let blogList = [
     主要是进行数据的增、删、改、查。`,
     blogType: "计算机",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img1.baidu.com/it/u=3149721907,2112240739&fm=253&fmt=auto&app=138&f=JPEG?w=752&h=500'
+    thumbnailPicUrl:
+      "https://img1.baidu.com/it/u=3149721907,2112240739&fm=253&fmt=auto&app=138&f=JPEG?w=752&h=500",
   },
   {
     id: 5,
@@ -211,7 +215,8 @@ let blogList = [
     主要是进行数据的增、删、改、查。`,
     blogType: "计算机",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img1.baidu.com/it/u=1080384635,1939579093&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=250'
+    thumbnailPicUrl:
+      "https://img1.baidu.com/it/u=1080384635,1939579093&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=250",
   },
   {
     id: 6,
@@ -219,7 +224,8 @@ let blogList = [
     content: `神秘博士`,
     blogType: "小说",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img0.baidu.com/it/u=2326889330,804723425&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500'
+    thumbnailPicUrl:
+      "https://img0.baidu.com/it/u=2326889330,804723425&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
   },
   {
     id: 7,
@@ -227,7 +233,8 @@ let blogList = [
     content: `啪啪啪啪啪`,
     blogType: "小说",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img2.baidu.com/it/u=3100978914,1633030869&fm=253&fmt=auto&app=138&f=JPEG?w=749&h=500'
+    thumbnailPicUrl:
+      "https://img2.baidu.com/it/u=3100978914,1633030869&fm=253&fmt=auto&app=138&f=JPEG?w=749&h=500",
   },
   {
     id: 8,
@@ -235,7 +242,8 @@ let blogList = [
     content: `普京大帝`,
     blogType: "小说",
     accountNum: "1234567",
-    thumbnailPicUrl:'https://img2.baidu.com/it/u=3921031004,1301420635&fm=253&fmt=auto&app=138&f=JPEG?w=336&h=500'
+    thumbnailPicUrl:
+      "https://img2.baidu.com/it/u=3921031004,1301420635&fm=253&fmt=auto&app=138&f=JPEG?w=336&h=500",
   },
   {
     id: 9,
@@ -243,7 +251,8 @@ let blogList = [
     content: `19个超赞的数据科学和机器学习工具，编程小白必看！（附资料）赶紧来吧`,
     blogType: "工具",
     accountNum: "1234567",
-    thumbnailPicUrl:'https://img2.baidu.com/it/u=821648956,4272374378&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800'
+    thumbnailPicUrl:
+      "https://img2.baidu.com/it/u=821648956,4272374378&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800",
   },
   {
     id: 10,
@@ -251,135 +260,123 @@ let blogList = [
     content: `还在为删库承担责任而烦恼么？`,
     blogType: "工具",
     accountNum: "A0062750",
-    thumbnailPicUrl:'https://img0.baidu.com/it/u=203714374,1178080890&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500'
+    thumbnailPicUrl:
+      "https://img0.baidu.com/it/u=203714374,1178080890&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
   },
 ];
 // 文章评论数据
 let blogCommentList = [
-    {
-        id:"1",
-        blogId:"1",
-        accountNum:"A0062750",
-        alias: "翊",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"2",
-        blogId:"3",
-        accountNum:"A0062750",
-        alias: "翊",
-        commentDate:"2023-02-01 00:07:56",
-        content:"真的很不错～"
-    
-    },
-    {
-        id:"3",
-        blogId:"5",
-        accountNum:"A0062750",
-        alias: "翊",
-        commentDate:"2023-03-11 12:59:30",
-        content:"没啥可说了"
-    
-    },
-    {
-        id:"4",
-        blogId:"7",
-        accountNum:"A0062750",
-        alias: "翊",
-        commentDate:"2023-05-17 16:34:09",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"5",
-        blogId:"9",
-        accountNum:"A0062750",
-        alias: "翊",
-        commentDate:"2023-01-22 11:10:32",
-        content:"毁灭吧，赶紧的"
-    
-    },
-    {
-        id:"6",
-        blogId:"2",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"7",
-        blogId:"4",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"8",
-        blogId:"6",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"9",
-        blogId:"7",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"10",
-        blogId:"8",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"11",
-        blogId:"9",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"12",
-        blogId:"1",
-        accountNum:"965840507",
-        alias: "中正",
-        commentDate:"2023-05-17 16:07:32",
-        content:"哎呦不错哟～"
-    
-    },
-    {
-        id:"13",
-        blogId:"2",
-        accountNum:"965840507",
-        alias: "翊",
-        commentDate:"2023-05-17 16:07:32",
-        content:"🐮B clas～"
-    
-    },
-]
+  {
+    id: "1",
+    blogId: "1",
+    accountNum: "A0062750",
+    alias: "翊",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "2",
+    blogId: "3",
+    accountNum: "A0062750",
+    alias: "翊",
+    commentDate: "2023-02-01 00:07:56",
+    content: "真的很不错～",
+  },
+  {
+    id: "3",
+    blogId: "5",
+    accountNum: "A0062750",
+    alias: "翊",
+    commentDate: "2023-03-11 12:59:30",
+    content: "没啥可说了",
+  },
+  {
+    id: "4",
+    blogId: "7",
+    accountNum: "A0062750",
+    alias: "翊",
+    commentDate: "2023-05-17 16:34:09",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "5",
+    blogId: "9",
+    accountNum: "A0062750",
+    alias: "翊",
+    commentDate: "2023-01-22 11:10:32",
+    content: "毁灭吧，赶紧的",
+  },
+  {
+    id: "6",
+    blogId: "2",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "7",
+    blogId: "4",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "8",
+    blogId: "6",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "9",
+    blogId: "7",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "10",
+    blogId: "8",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "11",
+    blogId: "9",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "12",
+    blogId: "1",
+    accountNum: "965840507",
+    alias: "中正",
+    commentDate: "2023-05-17 16:07:32",
+    content: "哎呦不错哟～",
+  },
+  {
+    id: "13",
+    blogId: "2",
+    accountNum: "965840507",
+    alias: "翊",
+    commentDate: "2023-05-17 16:07:32",
+    content: "🐮B clas～",
+  },
+];
 
 // 用户数据
 let userList = [
   {
     accountNum: "A0062750",
-    accountPwd: "123456",
+    password: "123456",
     userName: "iy",
     userRealName: "关浩宇",
     alias: "翊",
@@ -510,23 +507,54 @@ app.get("/search/hotBlogList", function (req, res) {
 // 获取所有博客分类
 app.get("/search/allBlogTypes", function (req, res) {
   let resList = [];
-  blogList.forEach(x=>{
-    resList.push(x.blogType)
-  })
+  blogList.forEach((x) => {
+    resList.push(x.blogType);
+  });
   resList = Array.from(new Set(resList));
-  res.send(resList)
+  res.send(resList);
 });
 
 // 获取评论
-app.get("/search/getBlogComments",function(req,res){
-    let resList = []
-    blogCommentList.forEach(x=>{
-        if(req.query.blogId === x.blogId) {
-            resList.push(x)
-        }
-    })
-    res.send(resList)
-})
+app.get("/search/getBlogComments", function (req, res) {
+  let resList = [];
+  blogCommentList.forEach((x) => {
+    if (req.query.blogId === x.blogId) {
+      resList.push(x);
+    }
+  });
+  res.send(resList);
+});
+// 登录
+app.get("/login", function (req, res) {
+  let sucRes = new SuccessRes();
+  let errRes = new ErrorRes();
+  let user = {};
+  userList.forEach((x) => {
+    if (req.query.accountNum === x.accountNum) {
+      if (req.query.password === x.password) {
+        console.log(req.query.password)
+        user.accountNum = x.accountNum;
+        user.password = x.password;
+        sucRes.msg = "登录成功";
+        sucRes.data = user;
+        res.send(sucRes);
+        return;
+      } else {
+        errRes.msg = "密码错误";
+        errRes.code = 501;
+        errRes.flag = false;
+        res.send(errRes);
+        return;
+      }
+    } else {
+      errRes.msg = "用户不存在";
+      errRes.code = 502;
+      errRes.flag = false;
+      res.send(errRes);
+      return;
+    }
+  });
+});
 
 app.listen(5001, (err) => {
   if (!err) {
