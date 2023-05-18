@@ -556,6 +556,39 @@ app.get("/login", function (req, res) {
   });
 });
 
+app.get('/login',function(req,res){
+    let err = new ErrorRes()
+    let suc = new SuccessRes()
+    if(req.query.accountNum === '' || '' === req.query.password){
+        err.msg = '用户名或密码不能为空'
+        res.send(err)
+        return;
+    }
+    userList.forEach(x=>{
+    if(req.query.accountNum === x.accountNum) {
+        if(req.query.password === x.password) {
+            suc.msg = '登录成功'
+            let user = {
+                accountNum:x.accountNum,
+                password:x.password
+            }
+            suc.data = user
+            res.send(suc)
+            return
+        }else{
+            err.msg = '密码错误'
+            res.send(err)
+            return
+        }
+    }else{
+        err.msg = '账号不存在'
+        res.send(err)
+        return
+    }
+
+    })
+})
+
 app.listen(5001, (err) => {
   if (!err) {
     console.log("服务器启动成功");
