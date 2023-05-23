@@ -464,9 +464,10 @@ app.get("/query/userInfo", function (req, res) {
     res.send(new ErrorRes(5001, "用户不存在"));
   }
 });
-// 获取个人博客的文章列表
-app.get("/search/myblog/blogList", function (req, res) {
+// 根据账号获取某个用户的博客的文章列表
+app.get("/search/getBlogListByAccountNum", function (req, res) {
   let respList = [];
+  console.log(req.query)
   if ("" === req.query.accountNum) {
     res.send(respList);
     return;
