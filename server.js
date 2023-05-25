@@ -1,5 +1,7 @@
 const express = require("express");
+const bodyParser = require('body-parser')
 const app = express();
+app.use(bodyParser.json())
 
 // 博客数据
 let blogList = [
@@ -259,6 +261,15 @@ let blogList = [
     title: "cpp一键删库工具",
     content: `还在为删库承担责任而烦恼么？`,
     blogType: "工具",
+    accountNum: "A0062750",
+    thumbnailPicUrl:
+      "https://img0.baidu.com/it/u=203714374,1178080890&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
+  },
+  {
+    id: 11,
+    title: "心情大不好",
+    content: `第一份日记`,
+    blogType: "日记",
     accountNum: "A0062750",
     thumbnailPicUrl:
       "https://img0.baidu.com/it/u=203714374,1178080890&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
@@ -557,38 +568,23 @@ app.get("/login", function (req, res) {
   });
 });
 
-app.get('/login',function(req,res){
-    let err = new ErrorRes()
-    let suc = new SuccessRes()
-    if(req.query.accountNum === '' || '' === req.query.password){
-        err.msg = '用户名或密码不能为空'
-        res.send(err)
-        return;
+// 根据id编辑博客的内容
+app.post('/blog/update',function(req,res) {
+  new ErrorRes();
+  let flag = false
+  blogList.forEach(x=>{
+    if(req.body.blogId === x.id) {
+      x.content = req.body.content
+      flag = !flag
+      return
     }
-    userList.forEach(x=>{
-    if(req.query.accountNum === x.accountNum) {
-        if(req.query.password === x.password) {
-            suc.msg = '登录成功'
-            let user = {
-                accountNum:x.accountNum,
-                password:x.password
-            }
-            suc.data = user
-            res.send(suc)
-            return
-        }else{
-            err.msg = '密码错误'
-            res.send(err)
-            return
-        }
-    }else{
-        err.msg = '账号不存在'
-        res.send(err)
-        return
-    }
-
-    })
-})
+  })
+  if(flag) {
+    res.send(new SuccessRes(200,"修改成功",null))
+  }else {
+    res.send(new ErrorRes(501,"博客不存在"))
+  }
+});
 
 app.listen(5001, (err) => {
   if (!err) {
